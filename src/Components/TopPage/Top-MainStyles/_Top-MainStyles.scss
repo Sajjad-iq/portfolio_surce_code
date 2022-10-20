@@ -1,0 +1,21 @@
+@use '../../../Styles_Main/colors' as colors;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Top-MainComponet {
+    width: 100%;
+    @include flexCenter();
+    flex-direction: column;
+
+    .hero-devices {
+        width: 65%;
+        margin-top: 150px
+    }
+}
+
+@import '../Header/Header';
+@import '../Center/Center'

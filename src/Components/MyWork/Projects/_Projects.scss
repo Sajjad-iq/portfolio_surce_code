@@ -1,0 +1,109 @@
+@use "../../../Styles_Main/colors" as col;
+
+.Projects {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 75px;
+
+
+    .ProjectContiner {
+        width: 350px;
+        height: 250px;
+        position: relative;
+        margin: 10px;
+
+        .Bg-color {
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000000, $alpha: 0.3);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            .JS,
+            .Html,
+            .Css,
+            .React,
+            .Sass,
+            .contextApi {
+                color: yellow;
+                margin: 4px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            .Html {
+                color: chocolate;
+            }
+
+            .Css,
+            .React {
+                color: aqua;
+            }
+
+            .Sass {
+                color: palevioletred;
+            }
+
+            .contextApi {
+                color: chocolate;
+            }
+
+        }
+
+        .Card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            background-color: col.$Card ;
+            border-radius: 10px;
+            transition: 0.3s;
+            opacity: 0;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .Header {
+                font-size: 23px;
+                color: white;
+                margin-bottom: 30px;
+                font-family: 'Lato', sans-serif;
+                text-align: center;
+                width: 80%;
+            }
+
+            .Card-btn {
+                padding: 10px 18px;
+                border: 2px solid col.$PrimryColor;
+                border-radius: 20px;
+                margin: 5px;
+                background: none;
+                color: white;
+                font-size: 20px;
+                font-family: 'Lato', sans-serif;
+                transition: 0.3s;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: col.$PrimryColor ;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@import './EcommrePage/EcoomrePage';
+@import './Eearth/Eearth';
+@import './Room-Home/RoomHome';

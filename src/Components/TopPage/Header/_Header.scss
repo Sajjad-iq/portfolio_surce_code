@@ -1,0 +1,47 @@
+@use '../../../Styles_Main/colors' as colors;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Top-MainComponet {
+
+    .Header {
+        width: 75%;
+        @include flexCenter();
+        justify-content: space-between;
+        padding: 10px;
+
+        .MyLogo {
+            font-family: 'Pacifico', 'cursive';
+            font-size: 75px;
+            color: colors.$PrimryColor;
+            user-select: none;
+        }
+
+        .Say-Hello-btn {
+            height: 45px;
+            width: 125px;
+            border: 2px solid colors.$PrimryColor;
+            border-radius: 20px;
+            background-color: white;
+            color: colors.$PrimryColor;
+            font-size: 20px;
+            transition: 0.3s;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: colors.$PrimryColor;
+                color: white;
+            }
+        }
+    }
+
+}

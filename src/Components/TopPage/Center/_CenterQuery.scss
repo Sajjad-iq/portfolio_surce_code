@@ -1,0 +1,66 @@
+@import '../../../Styles_Main/break_point';
+
+.App {
+
+    @include VLargeScreen {
+        .Top-MainComponet {
+            .Center {
+                .Title {
+                    font-size: 65px;
+                }
+
+                .magic-word {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    @include BigScreen {
+        .Top-MainComponet {
+            .Center {
+                .Title {
+                    font-size: 50px;
+                }
+
+                .magic-word {
+                    font-size: 30px;
+
+                }
+            }
+        }
+    }
+
+    @include phone {
+        .Top-MainComponet {
+            .Center {
+                .Title {
+                    font-size: 30px;
+                    text-align: center;
+                }
+
+                .magic-word {
+                    font-size: 25px !important;
+                    width: 300px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @include SmallPhone {
+        .Top-MainComponet {
+            .Center {
+                .Title {
+                    font-size: 25px;
+                    text-align: center;
+                }
+
+                .magic-word {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+}

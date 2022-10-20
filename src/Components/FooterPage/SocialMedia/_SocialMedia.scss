@@ -1,0 +1,32 @@
+@use '../../../Styles_Main/colors' as col;
+
+.FooterPage {
+    .SocialMedia {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+
+        .SocialMedia-btn {
+            margin: 10px;
+            padding: 5px;
+            text-decoration: none;
+            border: 1px solid black;
+            color: black;
+            border-radius: 10px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                border: 1px solid white;
+                color: white;
+            }
+
+            .SocialMedia-icon {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

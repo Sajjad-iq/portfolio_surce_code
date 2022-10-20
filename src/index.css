@@ -1,0 +1,709 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/*  
+    font-family: 'Fredoka One','cursive';
+    font-family: 'Pacifico',cursive; 
+    font-family: 'Lato',sans-serif;   
+            */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  width: 100%;
+  font-family: "Fredoka One", "cursive";
+}
+
+.Top-MainComponet {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Top-MainComponet .hero-devices {
+  width: 65%;
+  margin-top: 150px;
+}
+
+.Top-MainComponet .Header {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.Top-MainComponet .Header .MyLogo {
+  font-family: "Pacifico", "cursive";
+  font-size: 75px;
+  color: #6E07F3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.Top-MainComponet .Header .Say-Hello-btn {
+  height: 45px;
+  width: 125px;
+  border: 2px solid #6E07F3;
+  border-radius: 20px;
+  background-color: white;
+  color: #6E07F3;
+  font-size: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Top-MainComponet .Header .Say-Hello-btn:hover {
+  background-color: #6E07F3;
+  color: white;
+}
+
+.Top-MainComponet .Center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Top-MainComponet .Center .Title {
+  font-size: 45px;
+  margin-top: 75px;
+}
+.Top-MainComponet .Center .Title .frontendLabel {
+  color: #6E07F3;
+}
+.Top-MainComponet .Center .magic-word {
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Top-MainComponet .Center .My-img {
+  width: 175px;
+  height: 175px;
+  margin-top: 75px;
+  border-radius: 50%;
+  background-position: 30% 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("~/src/assets/Picsart_22-09-18_18-25-55-248.jpg");
+  display: none;
+}
+
+.MainAbuotMe {
+  width: 100%;
+  height: 550px;
+  background-color: #6E07F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.MainAbuotMe .Header {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.MainAbuotMe .AboutMe {
+  width: 550px;
+  text-align: center;
+  margin-top: 24px;
+  color: white;
+  font-weight: 700;
+  font-size: 23px;
+  font-family: "Lato", sans-serif;
+  line-height: 30px;
+  word-spacing: 3px;
+}
+.MainAbuotMe .AboutMe .high {
+  color: rgb(220, 120, 120);
+}
+
+.MainMaySkils {
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+
+.Skils {
+  width: 75%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  border: 1px solid #4BE3CB;
+  position: absolute;
+  top: -100px;
+  left: 12.5%;
+  background-color: white;
+}
+.Skils .code-icon {
+  padding: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: #4BE3CB;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.Skils .Header {
+  font-size: 40px;
+  margin: 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.Skils .languages,
+.Skils .Dev-Tools {
+  font-family: "Lato", sans-serif;
+  color: #6E07F3;
+  font-size: 23px;
+  margin: 10px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+.Skils .skils {
+  font-family: "Lato", sans-serif;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.MyWork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  text-align: center;
+}
+.MyWork .My-Recent-Work {
+  font-size: 35px;
+  margin: 20px;
+}
+.MyWork .Desription {
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+}
+.MyWork .hint {
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  margin-top: 25px;
+  color: #6E07F3;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(220, 120, 120);
+}
+
+.Projects {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 75px;
+}
+.Projects .ProjectContiner {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  margin: 10px;
+}
+.Projects .ProjectContiner .Bg-color {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.Projects .ProjectContiner .Bg-color .JS,
+.Projects .ProjectContiner .Bg-color .Html,
+.Projects .ProjectContiner .Bg-color .Css,
+.Projects .ProjectContiner .Bg-color .React,
+.Projects .ProjectContiner .Bg-color .Sass,
+.Projects .ProjectContiner .Bg-color .contextApi {
+  color: yellow;
+  margin: 4px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+.Projects .ProjectContiner .Bg-color .Html {
+  color: chocolate;
+}
+.Projects .ProjectContiner .Bg-color .Css,
+.Projects .ProjectContiner .Bg-color .React {
+  color: aqua;
+}
+.Projects .ProjectContiner .Bg-color .Sass {
+  color: palevioletred;
+}
+.Projects .ProjectContiner .Bg-color .contextApi {
+  color: chocolate;
+}
+.Projects .ProjectContiner .Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #141c3a;
+  border-radius: 10px;
+  transition: 0.3s;
+  opacity: 0;
+}
+.Projects .ProjectContiner .Card:hover {
+  opacity: 1;
+}
+.Projects .ProjectContiner .Card .Header {
+  font-size: 23px;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  width: 80%;
+}
+.Projects .ProjectContiner .Card .Card-btn {
+  padding: 10px 18px;
+  border: 2px solid #6E07F3;
+  border-radius: 20px;
+  margin: 5px;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.Projects .ProjectContiner .Card .Card-btn:hover {
+  background-color: #6E07F3;
+  color: white;
+}
+
+.ProjectContiner .EcommrePage {
+  width: 100%;
+  height: 100%;
+  background-image: url("~/src/assets/projects/Ecommre.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.ProjectContiner .Earth {
+  width: 100%;
+  height: 100%;
+  background-image: url("~/src/assets/projects/Earth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.ProjectContiner .RoomHome {
+  width: 100%;
+  height: 100%;
+  background-image: url("~/src/assets/projects/roomHome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.FooterPage {
+  background-color: #6E07F3;
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.FooterPage .MyLogo {
+  color: white;
+  font-family: "Pacifico", "cursive";
+  font-size: 75px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.FooterPage .describtion {
+  color: white;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.FooterPage .email {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+.FooterPage .email::before {
+  content: "@";
+  font-size: 20px;
+  color: wheat;
+}
+
+.FooterPage .SocialMedia {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.FooterPage .SocialMedia .SocialMedia-btn {
+  margin: 10px;
+  padding: 5px;
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.FooterPage .SocialMedia .SocialMedia-btn:hover {
+  border: 1px solid white;
+  color: white;
+}
+.FooterPage .SocialMedia .SocialMedia-btn .SocialMedia-icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 1919px) {
+  .App .Top-MainComponet .Center .Title {
+    font-size: 65px;
+  }
+  .App .Top-MainComponet .Center .magic-word {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1439px) and (max-width: 1919px) {
+  .App .Top-MainComponet .Center .Title {
+    font-size: 50px;
+  }
+  .App .Top-MainComponet .Center .magic-word {
+    font-size: 30px;
+  }
+}
+@media (min-width: 479px) and (max-width: 767px) {
+  .App .Top-MainComponet .Center .Title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .App .Top-MainComponet .Center .magic-word {
+    font-size: 25px !important;
+    width: 300px;
+    text-align: center;
+  }
+}
+@media (min-width: 319px) and (max-width: 479px) {
+  .App .Top-MainComponet .Center .Title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .App .Top-MainComponet .Center .magic-word {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1919px) {
+  .App .MainAbuotMe .Header {
+    font-size: 60px;
+    text-align: center;
+  }
+  .App .MainAbuotMe .AboutMe {
+    width: 850px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 1439px) and (max-width: 1919px) {
+  .App .MainAbuotMe .Header {
+    font-size: 55px;
+    text-align: center;
+  }
+  .App .MainAbuotMe .AboutMe {
+    width: 700px;
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1150px) {
+  .App .MainAbuotMe .Header {
+    font-size: 40px;
+    text-align: center;
+  }
+  .App .MainAbuotMe .AboutMe {
+    width: 550px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .App .MainAbuotMe .Header {
+    font-size: 40px;
+    text-align: center;
+  }
+  .App .MainAbuotMe .AboutMe {
+    width: 550px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 319px) and (max-width: 479px) {
+  .App .MainAbuotMe .Header {
+    font-size: 30px;
+    width: 85%;
+    text-align: center;
+  }
+  .App .MainAbuotMe .AboutMe {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+@media (min-width: 479px) and (max-width: 767px) {
+  .App .MainAbuotMe .Header {
+    font-size: 30px;
+    width: 85%;
+    text-align: center;
+  }
+  .App .MainAbuotMe .AboutMe {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1919px) {
+  .App .Top-MainComponet .MyLogo {
+    font-size: 150px;
+  }
+  .App .Top-MainComponet .Say-Hello-btn {
+    height: 75px;
+    width: 185px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 1439px) and (max-width: 1919px) {
+  .App .Top-MainComponet .MyLogo {
+    font-size: 125px;
+  }
+  .App .Top-MainComponet .Say-Hello-btn {
+    height: 60px;
+    width: 150px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1150px) {
+  .App .Header {
+    width: 90%;
+  }
+  .App .Header .MyLogo {
+    font-size: 100px;
+  }
+  .App .Header .Say-Hello-btn {
+    height: 50px;
+    width: 120px;
+    font-size: 22px;
+    padding: 5px 7px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .App .Header {
+    width: 90%;
+  }
+  .App .Header .MyLogo {
+    font-size: 100px;
+  }
+  .App .Header .Say-Hello-btn {
+    height: 50px;
+    width: 120px;
+    font-size: 22px;
+    padding: 5px 7px;
+  }
+}
+@media (min-width: 479px) and (max-width: 767px) {
+  .App .Header {
+    width: 90%;
+  }
+  .App .Header .MyLogo {
+    font-size: 75px;
+  }
+  .App .Header .Say-Hello-btn {
+    height: 45px;
+    width: 100px;
+    font-size: 18px;
+    padding: 5px 7px;
+  }
+}
+@media (min-width: 319px) and (max-width: 479px) {
+  .App .Top-MainComponet .Header {
+    width: 90%;
+  }
+  .App .Top-MainComponet .Header .MyLogo {
+    font-size: 75px;
+  }
+  .App .Top-MainComponet .Header .Say-Hello-btn {
+    height: 45px;
+    width: 100px;
+    font-size: 18px;
+    padding: 5px 7px;
+  }
+}
+
+@media (min-width: 1919px) {
+  .App .MainMaySkils {
+    height: 800px;
+  }
+  .App .MainMaySkils .Skils {
+    top: -100px;
+  }
+  .App .MainMaySkils .Skils .code-icon {
+    width: 75px;
+    height: 75px;
+  }
+  .App .MainMaySkils .Skils .Header {
+    font-size: 60px;
+    text-align: center;
+  }
+  .App .MainMaySkils .Skils .languages,
+.App .MainMaySkils .Skils .Dev-Tools {
+    font-size: 40px;
+  }
+  .App .MainMaySkils .Skils .skils {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1439px) and (max-width: 1919px) {
+  .App .Skils {
+    top: -100px;
+  }
+  .App .Skils .code-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .App .Skils .Header {
+    font-size: 50px;
+    text-align: center;
+  }
+  .App .Skils .languages,
+.App .Skils .Dev-Tools {
+    font-size: 30px;
+  }
+  .App .Skils .skils {
+    font-size: 25px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .App .Skils .code-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .App .Skils .Header {
+    font-size: 40px;
+    text-align: center;
+  }
+  .App .Skils .languages,
+.App .Skils .Dev-Tools {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+  .App .MyWork .Desription {
+    width: 80% !important;
+    text-align: center;
+  }
+  .App .MyWork .My-Recent-Work {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1919px) {
+  .App .MainMaySkils {
+    height: 800px;
+  }
+  .App .MainMaySkils .Skils {
+    top: -100px;
+  }
+  .App .MainMaySkils .Skils .code-icon {
+    width: 75px;
+    height: 75px;
+  }
+  .App .MainMaySkils .Skils .Header {
+    font-size: 60px;
+    text-align: center;
+  }
+  .App .MainMaySkils .Skils .languages,
+.App .MainMaySkils .Skils .Dev-Tools {
+    font-size: 40px;
+  }
+  .App .MainMaySkils .Skils .skils {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1439px) and (max-width: 1919px) {
+  .App .Skils {
+    top: -100px;
+  }
+  .App .Skils .code-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .App .Skils .Header {
+    font-size: 50px;
+    text-align: center;
+  }
+  .App .Skils .languages,
+.App .Skils .Dev-Tools {
+    font-size: 30px;
+  }
+  .App .Skils .skils {
+    font-size: 25px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .App .Skils .code-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .App .Skils .Header {
+    font-size: 40px;
+    text-align: center;
+  }
+  .App .Skils .languages,
+.App .Skils .Dev-Tools {
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=index.css.map */

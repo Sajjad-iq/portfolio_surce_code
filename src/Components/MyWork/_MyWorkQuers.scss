@@ -1,0 +1,19 @@
+@import '../../Styles_Main/break_point';
+
+
+
+.App {
+    @include phone {
+        .MyWork {
+
+            .Desription {
+                width: 80% !important;
+                text-align: center;
+            }
+
+            .My-Recent-Work {
+                font-size: 25px;
+            }
+        }
+    }
+}

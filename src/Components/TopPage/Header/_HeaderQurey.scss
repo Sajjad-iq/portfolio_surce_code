@@ -1,0 +1,106 @@
+@import '../../../Styles_Main/break_point';
+
+
+
+.App {
+
+    @include VLargeScreen {
+        .Top-MainComponet {
+            .MyLogo {
+                font-size: 150px;
+            }
+
+            .Say-Hello-btn {
+                height: 75px;
+                width: 185px;
+                font-size: 30px;
+            }
+        }
+    }
+
+    @include BigScreen {
+        .Top-MainComponet {
+            .MyLogo {
+                font-size: 125px;
+            }
+
+            .Say-Hello-btn {
+                height: 60px;
+                width: 150px;
+                font-size: 25px;
+            }
+        }
+    }
+
+    @include Tablet {
+        .Header {
+            width: 90%;
+
+            .MyLogo {
+                font-size: 100px;
+            }
+
+            .Say-Hello-btn {
+                height: 50px;
+                width: 120px;
+                font-size: 22px;
+                padding: 5px 7px;
+            }
+        }
+    }
+
+    @include SmallTablet {
+        .Header {
+            width: 90%;
+
+            .MyLogo {
+                font-size: 100px;
+            }
+
+            .Say-Hello-btn {
+                height: 50px;
+                width: 120px;
+                font-size: 22px;
+                padding: 5px 7px;
+            }
+        }
+    }
+
+    @include phone {
+        .Header {
+            width: 90%;
+
+            .MyLogo {
+                font-size: 75px;
+            }
+
+            .Say-Hello-btn {
+                height: 45px;
+                width: 100px;
+                font-size: 18px;
+                padding: 5px 7px;
+            }
+        }
+    }
+
+
+    @include SmallPhone {
+        .Top-MainComponet {
+            .Header {
+                width: 90%;
+
+                .MyLogo {
+                    font-size: 75px;
+                }
+
+                .Say-Hello-btn {
+                    height: 45px;
+                    width: 100px;
+                    font-size: 18px;
+                    padding: 5px 7px;
+                }
+            }
+        }
+    }
+
+}

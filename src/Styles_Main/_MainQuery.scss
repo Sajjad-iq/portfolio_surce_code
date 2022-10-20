@@ -1,0 +1,67 @@
+@import './break_point';
+
+@mixin VLargeScreen {
+    @media (min-width:map-get($breakPoints, 'VLargeScreen')) {
+        @content
+    }
+}
+
+;
+
+@mixin BigScreen {
+    @media (min-width:map-get($breakPoints, 'BigScreen'))and (max-width: map-get($breakPoints, 'VLargeScreen')) {
+        @content
+    }
+}
+
+;
+
+@mixin NormalScreen {
+    @media (min-width:map-get($breakPoints, 'NormalScreen')) and (max-width: map-get($breakPoints, 'BigScreen')) {
+        @content
+    }
+}
+
+;
+
+
+@mixin Tablet {
+    @media (min-width:map-get($breakPoints, 'Tablet')) and (max-width: map-get($breakPoints, 'NormalScreen')) {
+        @content
+    }
+}
+
+;
+
+
+@mixin SmallTablet {
+    @media (min-width:map-get($breakPoints, 'SmallTablet'))and (max-width: map-get($breakPoints, 'Tablet')) {
+        @content
+    }
+}
+
+;
+
+@mixin phone {
+    @media (min-width:map-get($breakPoints, 'phone'))and (max-width: map-get($breakPoints, 'SmallTablet')) {
+        @content
+    }
+}
+
+;
+
+@mixin SmallPhone {
+    @media (min-width:map-get($breakPoints, 'SmallPhone')) and (max-width: map-get($breakPoints, 'phone')) {
+        @content
+    }
+}
+
+;
+
+
+@import '../Components/TopPage/Center/CenterQuery';
+@import '../Components/AboutMe/MainAbuotMeQuery';
+@import '../Components/TopPage/Header/HeaderQurey';
+@import '../Components/MySkils/Skils/SkilsQuery';
+@import '../Components/MyWork/MyWorkQuers';
+@import '../Components/MySkils/Skils/SkilsQuery';

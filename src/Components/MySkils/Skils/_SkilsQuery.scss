@@ -1,0 +1,85 @@
+@import '../../../Styles_Main/break_point';
+
+.App {
+
+    @include VLargeScreen {
+        .MainMaySkils {
+            height: 800px;
+
+            .Skils {
+                top: -100px;
+
+                .code-icon {
+                    width: 75px;
+                    height: 75px;
+                }
+
+                .Header {
+                    font-size: 60px;
+                    text-align: center;
+                }
+
+                .languages,
+                .Dev-Tools {
+                    font-size: 40px;
+
+                }
+
+                .skils {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    @include BigScreen {
+        .Skils {
+            top: -100px;
+
+            .code-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .Header {
+                font-size: 50px;
+                text-align: center;
+            }
+
+            .languages,
+            .Dev-Tools {
+                font-size: 30px;
+
+            }
+
+            .skils {
+                font-size: 25px;
+            }
+        }
+    }
+
+    @include SmallTablet {
+        .Skils {
+            .code-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .Header {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .languages,
+            .Dev-Tools {
+                font-size: 25px;
+
+            }
+
+
+        }
+    }
+
+
+
+}

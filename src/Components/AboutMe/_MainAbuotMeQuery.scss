@@ -1,0 +1,100 @@
+@import '../../Styles_Main/break_point';
+
+.App {
+    @include VLargeScreen {
+        .MainAbuotMe {
+            .Header {
+                font-size: 60px;
+                text-align: center;
+            }
+
+            .AboutMe {
+                width: 850px;
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+        }
+    }
+
+    @include BigScreen {
+        .MainAbuotMe {
+            .Header {
+                font-size: 55px;
+                text-align: center;
+            }
+
+            .AboutMe {
+                width: 700px;
+                font-size: 25px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    @include Tablet {
+        .MainAbuotMe {
+            .Header {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .AboutMe {
+                width: 550px;
+                font-size: 20px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    @include SmallTablet {
+        .MainAbuotMe {
+            .Header {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .AboutMe {
+                width: 550px;
+                font-size: 20px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    @include SmallPhone {
+        .MainAbuotMe {
+            .Header {
+                font-size: 30px;
+                width: 85%;
+                text-align: center;
+            }
+
+            .AboutMe {
+                width: 80%;
+                font-size: 16px;
+            }
+
+        }
+    }
+
+
+    @include phone {
+        .MainAbuotMe {
+            .Header {
+                font-size: 30px;
+                width: 85%;
+                text-align: center;
+            }
+
+            .AboutMe {
+                width: 80%;
+                font-size: 16px;
+            }
+
+        }
+    }
+
+
+
+}

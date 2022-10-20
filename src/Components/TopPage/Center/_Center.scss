@@ -1,0 +1,40 @@
+@use '../../../Styles_Main/colors' as col;
+
+.Top-MainComponet {
+    .Center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .Title {
+            font-size: 45px;
+            margin-top: 75px;
+
+            .frontendLabel {
+                color: col.$PrimryColor;
+            }
+        }
+
+        .magic-word {
+            margin-top: 20px;
+            font-size: 25px;
+            font-family: 'Lato', sans-serif;
+            width: fit-content;
+        }
+
+        .My-img {
+            width: 175px;
+            height: 175px;
+            margin-top: 75px;
+            border-radius: 50%;
+            background-position: 30% 10%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("~/src/assets/Picsart_22-09-18_18-25-55-248.jpg");
+            display: none;
+        }
+    }
+
+
+}
